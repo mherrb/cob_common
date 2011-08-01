@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       name="cob3-1" >
+  
+  <!-- The following included files set up definitions of parts of the robot body -->
+  <!-- misc common stuff? -->
+  <include filename="$(find cob_description)/ros/urdf/common.xacro" />
+
+  <!-- calibration -->
+  <!-- <include filename="$(find cob_description)/ros/calibration/cob3-1.urdf.xacro" /> -->
+  
+  <!-- base -->
+  <include filename="$(find cob_description)/ros/urdf/base_v1/base.urdf.xacro" />	<!-- new version; platform_controller and platform_navigation not yet working -->
+ 
+  
+</robot>
